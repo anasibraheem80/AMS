@@ -1,0 +1,711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CE5E5F9-8B82-415E-A7F6-D2E2CED0EB2E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AMSPRO</RootNamespace>
+    <AssemblyName>AMSPRO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DynamicTypeDescriptor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DynamicTypeDescriptor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="ObjectListView">
+      <HintPath>..\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="Petzold.Media3D">
+      <HintPath>C:\Users\anas\Desktop\Petzold.Media3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalysisModel.cs" />
+    <Compile Include="ArchWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchWallForm.Designer.cs">
+      <DependentUpon>ArchWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArchWallFormALL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchWallFormALL.Designer.cs">
+      <DependentUpon>ArchWallFormALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeamDesignerBarsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeamDesignerBarsForm.Designer.cs">
+      <DependentUpon>BeamDesignerBarsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeamDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeamDesignerForm.Designer.cs">
+      <DependentUpon>BeamDesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeamInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeamInformationForm.Designer.cs">
+      <DependentUpon>BeamInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BeamKindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BeamKindForm.Designer.cs">
+      <DependentUpon>BeamKindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DefineLoadPatternsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefineLoadPatternsForm.Designer.cs">
+      <DependentUpon>DefineLoadPatternsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefineMaterialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefineMaterialsForm.Designer.cs">
+      <DependentUpon>DefineMaterialsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DROWcls.cs" />
+    <Compile Include="EndLengthOffsetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndLengthOffsetsForm.Designer.cs">
+      <DependentUpon>EndLengthOffsetsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtrudeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtrudeForm.Designer.cs">
+      <DependentUpon>ExtrudeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Failure Interaction Surface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Failure Interaction Surface.designer.cs">
+      <DependentUpon>Failure Interaction Surface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameLocalAxesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameLocalAxesForm.Designer.cs">
+      <DependentUpon>FrameLocalAxesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameResultsForm.Designer.cs">
+      <DependentUpon>FrameResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameResultsGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameResultsGroupForm.Designer.cs">
+      <DependentUpon>FrameResultsGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FramesDiagramChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FramesDiagramChoiceForm.Designer.cs">
+      <DependentUpon>FramesDiagramChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameSectionReinforcementDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameSectionReinforcementDataForm.Designer.cs">
+      <DependentUpon>FrameSectionReinforcementDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FramReleasesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FramReleasesForm.Designer.cs">
+      <DependentUpon>FramReleasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material properties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Material properties.designer.cs">
+      <DependentUpon>Material properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math3DP1.cs" />
+    <Compile Include="meshclass.cs" />
+    <Compile Include="PropertyModifiersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyModifiersForm.Designer.cs">
+      <DependentUpon>PropertyModifiersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReplicateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplicateForm.Designer.cs">
+      <DependentUpon>ReplicateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionBarsPropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionBarsPropertyForm.Designer.cs">
+      <DependentUpon>SectionBarsPropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionDesignerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionDesignerForm.Designer.cs">
+      <DependentUpon>SectionDesignerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionDrawForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionDrawForm.Designer.cs">
+      <DependentUpon>SectionDrawForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionFiberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionFiberForm.Designer.cs">
+      <DependentUpon>SectionFiberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionRebarTieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionRebarTieForm.Designer.cs">
+      <DependentUpon>SectionRebarTieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionTeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionTeeForm.Designer.cs">
+      <DependentUpon>SectionTeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SectionWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionWallForm.Designer.cs">
+      <DependentUpon>SectionWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectByFrameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectByFrameForm.Designer.cs">
+      <DependentUpon>SelectByFrameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectByMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectByMaterialForm.Designer.cs">
+      <DependentUpon>SelectByMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectByObjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectByObjectForm.Designer.cs">
+      <DependentUpon>SelectByObjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectBySlabForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectBySlabForm.Designer.cs">
+      <DependentUpon>SelectBySlabForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectByStoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectByStoriesForm.Designer.cs">
+      <DependentUpon>SelectByStoriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectByWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectByWallForm.Designer.cs">
+      <DependentUpon>SelectByWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectElevationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectElevationForm.Designer.cs">
+      <DependentUpon>SelectElevationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Set3DViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Set3DViewForm.Designer.cs">
+      <DependentUpon>Set3DViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SnapOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnapOptionsForm.Designer.cs">
+      <DependentUpon>SnapOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoryFrm.Designer.cs">
+      <DependentUpon>StoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoryFrmAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoryFrmAdd.Designer.cs">
+      <DependentUpon>StoryFrmAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameLoadAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameLoadAssignmentForm.Designer.cs">
+      <DependentUpon>FrameLoadAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameLoadAssignmentPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameLoadAssignmentPForm.Designer.cs">
+      <DependentUpon>FrameLoadAssignmentPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FramePropertiesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FramePropertiesFrm.Designer.cs">
+      <DependentUpon>FramePropertiesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrameSectionAssignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrameSectionAssignForm.Designer.cs">
+      <DependentUpon>FrameSectionAssignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="GRIDfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRIDfrm.Designer.cs">
+      <DependentUpon>GRIDfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFCclass.cs" />
+    <Compile Include="InformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationForm.Designer.cs">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JointLoadAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JointLoadAssignmentForm.Designer.cs">
+      <DependentUpon>JointLoadAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JointRestraintsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JointRestraintsForm.Designer.cs">
+      <DependentUpon>JointRestraintsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LineFrm.Designer.cs">
+      <DependentUpon>LineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadCombinationDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadCombinationDataForm.Designer.cs">
+      <DependentUpon>LoadCombinationDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadCombinationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadCombinationForm.Designer.cs">
+      <DependentUpon>LoadCombinationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math3DP.cs" />
+    <Compile Include="Modify_Show PropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify_Show PropertyForm.Designer.cs">
+      <DependentUpon>Modify_Show PropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MterialPropertyDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MterialPropertyDataForm.Designer.cs">
+      <DependentUpon>MterialPropertyDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myglobals.cs" />
+    <Compile Include="PointFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PointFrm.Designer.cs">
+      <DependentUpon>PointFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SectionsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectionsFrm.Designer.cs">
+      <DependentUpon>SectionsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetVeiwOptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetVeiwOptionsForm.Designer.cs">
+      <DependentUpon>SetVeiwOptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShellLoadAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShellLoadAssignmentForm.Designer.cs">
+      <DependentUpon>ShellLoadAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShellSectionAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShellSectionAssignmentForm.Designer.cs">
+      <DependentUpon>ShellSectionAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlabInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlabInformationForm.Designer.cs">
+      <DependentUpon>SlabInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlabProperteisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlabProperteisForm.Designer.cs">
+      <DependentUpon>SlabProperteisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlabPropertyDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlabPropertyDataForm.Designer.cs">
+      <DependentUpon>SlabPropertyDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stress-Strain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stress-Strain.designer.cs">
+      <DependentUpon>Stress-Strain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WallPropertiesDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WallPropertiesDataForm.Designer.cs">
+      <DependentUpon>WallPropertiesDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WallPropertiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WallPropertiesForm.Designer.cs">
+      <DependentUpon>WallPropertiesForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ArchWallForm.resx">
+      <DependentUpon>ArchWallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchWallFormALL.resx">
+      <DependentUpon>ArchWallFormALL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeamDesignerBarsForm.resx">
+      <DependentUpon>BeamDesignerBarsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeamDesignerForm.resx">
+      <DependentUpon>BeamDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeamInformationForm.resx">
+      <DependentUpon>BeamInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BeamKindForm.resx">
+      <DependentUpon>BeamKindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefineLoadPatternsForm.resx">
+      <DependentUpon>DefineLoadPatternsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefineMaterialsForm.resx">
+      <DependentUpon>DefineMaterialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndLengthOffsetsForm.resx">
+      <DependentUpon>EndLengthOffsetsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtrudeForm.resx">
+      <DependentUpon>ExtrudeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Failure Interaction Surface.resx">
+      <DependentUpon>Failure Interaction Surface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameLocalAxesForm.resx">
+      <DependentUpon>FrameLocalAxesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameResultsForm.resx">
+      <DependentUpon>FrameResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameResultsGroupForm.resx">
+      <DependentUpon>FrameResultsGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FramesDiagramChoiceForm.resx">
+      <DependentUpon>FramesDiagramChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameSectionReinforcementDataForm.resx">
+      <DependentUpon>FrameSectionReinforcementDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FramReleasesForm.resx">
+      <DependentUpon>FramReleasesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material properties.resx">
+      <DependentUpon>Material properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyModifiersForm.resx">
+      <DependentUpon>PropertyModifiersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplicateForm.resx">
+      <DependentUpon>ReplicateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionBarsPropertyForm.resx">
+      <DependentUpon>SectionBarsPropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionDesignerForm.resx">
+      <DependentUpon>SectionDesignerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionDrawForm.resx">
+      <DependentUpon>SectionDrawForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionFiberForm.resx">
+      <DependentUpon>SectionFiberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionRebarTieForm.resx">
+      <DependentUpon>SectionRebarTieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionTeeForm.resx">
+      <DependentUpon>SectionTeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SectionWallForm.resx">
+      <DependentUpon>SectionWallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectByFrameForm.resx">
+      <DependentUpon>SelectByFrameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectByMaterialForm.resx">
+      <DependentUpon>SelectByMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectByObjectForm.resx">
+      <DependentUpon>SelectByObjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBySlabForm.resx">
+      <DependentUpon>SelectBySlabForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectByStoriesForm.resx">
+      <DependentUpon>SelectByStoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectByWallForm.resx">
+      <DependentUpon>SelectByWallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectElevationForm.resx">
+      <DependentUpon>SelectElevationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Set3DViewForm.resx">
+      <DependentUpon>Set3DViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapOptionsForm.resx">
+      <DependentUpon>SnapOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoryFrm.resx">
+      <DependentUpon>StoryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoryFrmAdd.resx">
+      <DependentUpon>StoryFrmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameLoadAssignmentForm.resx">
+      <DependentUpon>FrameLoadAssignmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameLoadAssignmentPForm.resx">
+      <DependentUpon>FrameLoadAssignmentPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FramePropertiesFrm.resx">
+      <DependentUpon>FramePropertiesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrameSectionAssignForm.resx">
+      <DependentUpon>FrameSectionAssignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRIDfrm.resx">
+      <DependentUpon>GRIDfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationForm.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JointLoadAssignmentForm.resx">
+      <DependentUpon>JointLoadAssignmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JointRestraintsForm.resx">
+      <DependentUpon>JointRestraintsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineFrm.resx">
+      <DependentUpon>LineFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadCombinationDataForm.resx">
+      <DependentUpon>LoadCombinationDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadCombinationForm.resx">
+      <DependentUpon>LoadCombinationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify_Show PropertyForm.resx">
+      <DependentUpon>Modify_Show PropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MterialPropertyDataForm.resx">
+      <DependentUpon>MterialPropertyDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointFrm.resx">
+      <DependentUpon>PointFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SectionsFrm.resx">
+      <DependentUpon>SectionsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetVeiwOptionsForm.resx">
+      <DependentUpon>SetVeiwOptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShellLoadAssignmentForm.resx">
+      <DependentUpon>ShellLoadAssignmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShellSectionAssignmentForm.resx">
+      <DependentUpon>ShellSectionAssignmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlabInformationForm.resx">
+      <DependentUpon>SlabInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlabProperteisForm.resx">
+      <DependentUpon>SlabProperteisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlabPropertyDataForm.resx">
+      <DependentUpon>SlabPropertyDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stress-Strain.resx">
+      <DependentUpon>Stress-Strain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WallPropertiesDataForm.resx">
+      <DependentUpon>WallPropertiesDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WallPropertiesForm.resx">
+      <DependentUpon>WallPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
